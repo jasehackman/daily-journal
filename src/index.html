@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Daily Journal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <h1>Daily Journal</h1>
+  <form action = ''>
+    
+    <!-- Date -->
+    <fieldset>
+      <label class = "form__fields--floats" for="journalDate">Date of entry</label>
+      <input  type = "date" name= 'journalDate' id="journalDate">
+    </fieldset>
+   
+    <!-- Concepts -->
+    <fieldset>
+      <label class = "form__fields--floats" for="journalConcepts">Concepts Covered</label>
+      <input class = "form__fields--floats" type = "text" name= 'journalConcepts' id="journalConcepts">
+    </fieldset>
+    
+    <!-- Entry -->
+    <fieldset>
+      <label class = "form__fields--floats" for="journalEntry">Journal Entry</label>
+      <textarea class = "form__fields--floats" name ="journalEntry" rows = '5' cols='30'>Type your entry here!</textarea>
+    </fieldset>
+
+    <!-- Mood -->
+    <fieldset>
+      <label class = "form__fields--floats" for="journalMood">Mood for the day</label>
+      <select class = "form__fields--floats" name="journalMood">
+          <option value="sad">Sad</option>
+          <option value="happy">Happy</option>
+          <option value="ok">Ok</option>
+      </select>
+
+      <!-- Submit -->
+    </fieldset>
+      <input class = "form__fields--floats" type = "submit" value="Record Journal Entry">
+  </form>
+</body>
+</html>
