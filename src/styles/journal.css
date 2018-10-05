@@ -1,0 +1,22 @@
+fieldset {
+  display: flex;
+}
+
+.form__fields--floats {
+  flex-direction: column;
+}
+/* label {
+  flex-direction: column;
+}
+
+input {
+  flex-direction: column;
+} 
+
+select {
+  flex-direction: column;
+}
+
+textarea {
+  flex-direction: column;
+} */
