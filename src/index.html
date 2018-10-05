@@ -15,7 +15,23 @@
       <label for="journalDate">Date of entry</label>
       <input type = "date" name= 'journalDate' id="journalDate">
     </fieldset>
-
+    <fieldset>
+        <label for="journalConcepts">Concepts Covered</label>
+        <input type = "text" name= 'journalConcepts' id="journalConcepts">
+      </fieldset>
+    <fieldset>
+        <label for="journalEntry">Journal Entry</label>
+        <textarea name"journalEntry" rows = '5' cols='30'>Type your entry here!</textarea>
+      </fieldset>
+    <fieldset>
+        <label for="journalMood">Mood for the day</label>
+        <select name="journalMood">
+            <option value="sad">Sad</option>
+            <option value="happy">Happy</option>
+            <option value="ok">Ok</option>
+        </select>
+      </fieldset>
+      <input type = "submit" value="Record Journal Entry">
   </form>
 </body>
 </html>
