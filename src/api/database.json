@@ -1,8 +1,18 @@
-{"journalEntries": {
-    "id": 1,
-    "date": "2018-10-19",
-    "concept": "",
-    "entry": "",
-    "mood": ""
-}
+{
+  "journalEntries": [
+    {
+      "id": 1,
+      "date": "2018-10-19",
+      "concept": "",
+      "entry": "",
+      "mood": ""
+    },
+    {
+      "id": 2,
+      "date": "2018-10-19",
+      "concept": "",
+      "entry": "",
+      "mood": ""
+    }
+  ]
 }
