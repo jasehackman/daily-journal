@@ -1,3 +1,7 @@
+body {
+  background: #779FA1;
+}
+
 fieldset {
   display: flex;
 }
@@ -20,3 +24,18 @@ select {
 textarea {
   flex-direction: column;
 } */
+
+.inserted {
+  text-align: center;
+  width: 30vw;
+  background: #E0CBA8;
+  border-radius: 1vw;
+  margin: 1vw;
+  padding: 1vw;
+
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
