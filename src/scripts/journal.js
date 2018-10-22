@@ -11,5 +11,5 @@
 const theSpot = document.querySelector(".section");
 // // puts the created component in the DOM
 API.getJournalEntries().then((theGoodStuff) => {
-  theSpot.insertAdjacentHTML('beforeend', journalComponent(theGoodStuff))
+  theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(theGoodStuff))
 })
