@@ -1,22 +1,15 @@
-// creating div
-let textInsert = ""
-const journalComponent = (journalEntries) => {
-  journalEntries.forEach( (element) =>{
-  textInsert += `<div class = "inserted">
-                  <h1>${element.date}</h1>
-                  <h3>${element.concept}</h3>
-                  <h4>${element.mood}</h4>
-                  <p>${element.entry}</p>
-                </div>`;
-  })
-  return textInsert;
-} 
+/*
+    Main application logic that uses the functions and objects
+    defined in the other JavaScript files.
+
+    Change the fake variable names below to what they should be
+    to get the data and display it.
+*/
+
 
 // the spot
 const theSpot = document.querySelector(".section");
- 
-// grabbing json file
-fetch("http://localhost:3000/journalEntries").then(stuff => stuff.json())
-  .then(theGoodStuff => { 
-          theSpot.insertAdjacentHTML('beforeend', journalComponent(theGoodStuff)); 
-    })
+// // puts the created component in the DOM
+API.getJournalEntries().then((theGoodStuff) => {
+  theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(theGoodStuff))
+})
