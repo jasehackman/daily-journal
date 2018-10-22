@@ -11,12 +11,3 @@ const journalComponent = (journalEntries) => {
   })
   return textInsert;
 } 
-
-// the spot
-const theSpot = document.querySelector(".section");
- 
-// grabbing json file
-fetch("http://localhost:3000/journalEntries").then(stuff => stuff.json())
-  .then(theGoodStuff => { 
-          theSpot.insertAdjacentHTML('beforeend', journalComponent(theGoodStuff)); 
-    })
