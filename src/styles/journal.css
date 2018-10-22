@@ -39,3 +39,8 @@ textarea {
   display: flex;
   justify-content: center;
 }
+
+form {
+  background: #E0CBA8;
+  
+}
