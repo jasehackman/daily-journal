@@ -10,6 +10,16 @@
 // the spot
 const theSpot = document.querySelector(".section");
 // // puts the created component in the DOM
-API.getJournalEntries().then((theGoodStuff) => {
+let putApiInDom = () => {
+  theSpot.innerHTML = null; 
+  API.getJournalEntries().then((theGoodStuff) => {
   theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(theGoodStuff))
+})}
+putApiInDom();
+
+let submitButton = document.getElementById("submit");
+submitButton.addEventListener("click", () => { 
+  API.postJournalEntries(jsonComponentBuilder()).then(() => {
+    putApiInDom();
+  })
 })
