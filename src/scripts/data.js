@@ -12,5 +12,10 @@ const API = {
       "Content-Type": "application/json"
   },
   body: JSON.stringify(journalEntryObject)
-  })}}
+  })},
+  getJournalEntriesByMood (mood) {
+    return fetch(`http://localhost:8088/journalEntries?mood=${mood}`)
+          .then(response => response.json())
+  }
+}
 
