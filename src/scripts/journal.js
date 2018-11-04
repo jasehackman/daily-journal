@@ -24,3 +24,15 @@ submitButton.addEventListener("click", () => {
     putApiInDom();
   })
 })
+
+// finds each radio button, puts a click event on them and grabs the value from the clicked item
+let eachRadio = document.querySelectorAll(".radio_mood");
+eachRadio.forEach( radioClick =>
+  radioClick.addEventListener('click', () => {
+    let clickValue = radioClick.value;
+    API.getJournalEntriesByMood(clickValue).then((entriesByMood) => {
+      theSpot.innerHTML = null; 
+      theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(entriesByMood))
+    })
+    } ))
+
