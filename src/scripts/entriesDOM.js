@@ -2,9 +2,10 @@
 
 // // puts the created component in the DOM
 
-let textInsert = ""
+
 const journalComponent = {
   addBuildComponet (journalEntries)  {
+    let textInsert = ""
     journalEntries.forEach( (element) =>{
     textInsert += component.build(element);
       })
