@@ -1,9 +1,9 @@
 let jsonComponentBuilder = () => {
     let objToStore = {
-    date: document.getElementById("journalDate").value,
-    concept: document.getElementById("journalConcepts").value,
-    entry: document.getElementById("journalEntry").value,
-    mood: document.getElementById("journalMood").value
+    date: $("#journalDate").val(),
+    concept: $("#journalConcepts").val(),
+    entry: $("#journalEntry").val(),
+    mood: $("#journalMood").val()
   };
   return objToStore;
 }

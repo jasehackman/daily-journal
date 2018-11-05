@@ -8,21 +8,20 @@
 
 
 // the spot
-const theSpot = document.querySelector(".section");
+const theSpot = $(".section");
 // // puts the created component in the DOM
 let putApiInDom = () => {
   theSpot.innerHTML = null; 
   API.getJournalEntries().then((theGoodStuff) => {
-  theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(theGoodStuff))
+  theSpot.append(journalComponent.addBuildComponet(theGoodStuff))
 })}
 putApiInDom();
 
 // submits data and posts in the dom
-let submitButton = document.getElementById("submit");
-submitButton.addEventListener("click", () => { 
-  theSpot.innerHTML = null;
+$("#submit").click(() => { 
+  theSpot.text(null);
   API.postAndGet(jsonComponentBuilder()).then((journalEntriesfromAPI) => {
-    theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(journalEntriesfromAPI))
+    theSpot.append(journalComponent.addBuildComponet(journalEntriesfromAPI))
 
   })
 })
@@ -33,8 +32,8 @@ eachRadio.forEach( radioClick =>
   radioClick.addEventListener('click', () => {
     let clickValue = radioClick.value;
     API.getJournalEntriesByMood(clickValue).then((entriesByMood) => {
-      theSpot.innerHTML = null; 
-      theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(entriesByMood))
+      theSpot.text(null); 
+      theSpot.append(journalComponent.addBuildComponet(entriesByMood))
     })
     } ))
 
