@@ -16,6 +16,10 @@ const API = {
   getJournalEntriesByMood (mood) {
     return fetch(`http://localhost:8088/journalEntries?mood=${mood}`)
           .then(response => response.json())
+  },
+  postAndGet (journalEntryObject) {
+    return this.postJournalEntries(journalEntryObject).then(() => this.getJournalEntries())
   }
+  
 }
 
