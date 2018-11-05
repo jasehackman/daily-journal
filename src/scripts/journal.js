@@ -20,8 +20,10 @@ putApiInDom();
 // submits data and posts in the dom
 let submitButton = document.getElementById("submit");
 submitButton.addEventListener("click", () => { 
-  API.postJournalEntries(jsonComponentBuilder()).then(() => {
-    putApiInDom();
+  theSpot.innerHTML = null;
+  API.postAndGet(jsonComponentBuilder()).then((journalEntriesfromAPI) => {
+    theSpot.insertAdjacentHTML('beforeend', journalComponent.addBuildComponet(journalEntriesfromAPI))
+
   })
 })
 
