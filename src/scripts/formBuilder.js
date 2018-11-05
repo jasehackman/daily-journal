@@ -45,7 +45,7 @@ let formBuilder = {
   </section>`
   return formHTML;
   },
-  formInsertPoint: document.getElementById("formInsert")
+  formInsertPoint: $("#formInsert")
 }
 
-formBuilder.formInsertPoint.innerHTML = formBuilder.formfields();
+formBuilder.formInsertPoint.html(formBuilder.formfields())
