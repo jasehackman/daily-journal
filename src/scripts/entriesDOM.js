@@ -1,3 +1,4 @@
+import component from "./entryComponent"
 
 
 // // puts the created component in the DOM
@@ -12,3 +13,5 @@ const journalComponent = {
     return textInsert;
   } 
 }
+
+export default journalComponent
