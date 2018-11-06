@@ -83,6 +83,13 @@
       "entry": "Type your entry here!",
       "mood": "happy",
       "id": 12
+    },
+    {
+      "date": "2018-11-30",
+      "concept": "New Stuff",
+      "entry": "all the new stuff",
+      "mood": "happy",
+      "id": 13
     }
   ]
 }

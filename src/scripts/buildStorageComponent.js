@@ -8,3 +8,4 @@ let jsonComponentBuilder = () => {
   return objToStore;
 }
 
+export default jsonComponentBuilder

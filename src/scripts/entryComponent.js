@@ -1,6 +1,6 @@
 // creating div
 
-let component = {
+ let component = {
   build (element) {
   return `<div class = "inserted">
     <h1>${element.date}</h1>
@@ -10,3 +10,5 @@ let component = {
   </div>`;
 }
 }
+
+export default component

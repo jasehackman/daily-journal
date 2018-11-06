@@ -48,4 +48,4 @@ let formBuilder = {
   formInsertPoint: $("#formInsert")
 }
 
-formBuilder.formInsertPoint.html(formBuilder.formfields())
+export default formBuilder
