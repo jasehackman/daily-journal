@@ -5,27 +5,28 @@
       "date": "2018-10-19",
       "concept": "",
       "entry": "It was so cool",
-      "mood": ""
+      "moodId": 1
     },
     {
       "date": "2018-11-22",
       "concept": "Everything",
       "entry": "All the stuff",
-      "mood": "sad",
+      "moodId": 3,
       "id": 2
     }
-    ],
+  ],
   "moods": [
     {
       "mood": "Happy",
-      "moodId": 1
+      "id": 1
     },
     {
       "mood": "Sad",
-      "moodId": 2
-    },{
+      "id": 2
+    },
+    {
       "mood": "Ok",
-      "moodId": 3
+      "id": 3
     }
   ]
 }

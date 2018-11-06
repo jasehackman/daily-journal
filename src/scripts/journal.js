@@ -21,7 +21,7 @@ const theSpot = $(".section");
 // // puts the created component in the DOM
 let putApiInDom = () => {
   theSpot.innerHTML = null; 
-  API.getJournalEntries().then((theGoodStuff) => {
+  API.getJournalEntriesWMoods().then((theGoodStuff) => {
   theSpot.append(journalComponent.addBuildComponet(theGoodStuff))
 })}
 putApiInDom();

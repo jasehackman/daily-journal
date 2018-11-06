@@ -27,9 +27,9 @@ let formBuilder = {
     <fieldset>
       <label class = "form__fields--floats" for="journalMood">Mood for the day</label>
       <select class = "form__fields--floats" name="journalMood" id="journalMood">
-          <option value="sad">Sad</option>
-          <option value="happy">Happy</option>
-          <option value="ok">Ok</option>
+          <option value=2>Sad</option>
+          <option value=1>Happy</option>
+          <option value=3>Ok</option>
       </select>
 
       <!-- Submit -->
