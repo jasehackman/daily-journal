@@ -13,83 +13,19 @@
       "entry": "All the stuff",
       "mood": "sad",
       "id": 2
+    }
+    ],
+  "moods": [
+    {
+      "mood": "Happy",
+      "moodId": 1
     },
     {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 3
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "dsfsdf",
-      "mood": "sad",
-      "id": 4
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 5
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 6
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 7
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 8
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 9
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 10
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 11
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "happy",
-      "id": 12
-    },
-    {
-      "date": "2018-11-30",
-      "concept": "New Stuff",
-      "entry": "all the new stuff",
-      "mood": "happy",
-      "id": 13
+      "mood": "Sad",
+      "moodId": 2
+    },{
+      "mood": "Ok",
+      "moodId": 3
     }
   ]
 }
