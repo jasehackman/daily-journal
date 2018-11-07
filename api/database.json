@@ -5,91 +5,81 @@
       "date": "2018-10-19",
       "concept": "",
       "entry": "It was so cool",
-      "mood": ""
+      "moodId": 1
     },
     {
       "date": "2018-11-22",
       "concept": "Everything",
       "entry": "All the stuff",
-      "mood": "sad",
+      "moodId": 3,
       "id": 2
     },
     {
       "date": "",
       "concept": "",
       "entry": "Type your entry here!",
-      "mood": "sad",
+      "moodId": 2,
       "id": 3
     },
     {
       "date": "",
       "concept": "",
-      "entry": "dsfsdf",
-      "mood": "sad",
+      "entry": "Type your entry here!",
+      "moodId": 2,
       "id": 4
     },
     {
       "date": "",
       "concept": "",
       "entry": "Type your entry here!",
-      "mood": "sad",
+      "moodId": 4,
       "id": 5
     },
     {
       "date": "",
       "concept": "",
       "entry": "Type your entry here!",
-      "mood": "sad",
+      "moodId": 1,
       "id": 6
     },
     {
       "date": "",
       "concept": "",
       "entry": "Type your entry here!",
-      "mood": "sad",
+      "moodId": 3,
       "id": 7
     },
     {
       "date": "",
       "concept": "",
       "entry": "Type your entry here!",
-      "mood": "sad",
+      "moodId": 1,
       "id": 8
     },
     {
       "date": "",
       "concept": "",
       "entry": "Type your entry here!",
-      "mood": "sad",
+      "moodId": 1,
       "id": 9
+    }
+  ],
+  "moods": [
+    {
+      "mood": "Happy",
+      "id": 1
     },
     {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 10
+      "mood": "Sad",
+      "id": 2
     },
     {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "sad",
-      "id": 11
+      "mood": "Ok",
+      "id": 3
     },
     {
-      "date": "",
-      "concept": "",
-      "entry": "Type your entry here!",
-      "mood": "happy",
-      "id": 12
-    },
-    {
-      "date": "2018-11-30",
-      "concept": "New Stuff",
-      "entry": "all the new stuff",
-      "mood": "happy",
-      "id": 13
+      "mood": "weird",
+      "id": 4
     }
   ]
 }

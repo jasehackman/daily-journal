@@ -3,7 +3,7 @@ let jsonComponentBuilder = () => {
     date: $("#journalDate").val(),
     concept: $("#journalConcepts").val(),
     entry: $("#journalEntry").val(),
-    mood: $("#journalMood").val()
+    moodId: parseInt($("#journalMood").val())
   };
   return objToStore;
 }
