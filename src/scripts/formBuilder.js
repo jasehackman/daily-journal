@@ -1,5 +1,6 @@
-// TODO: refactor so I am actually using functions to build all of the components 
 
+
+// TODO: refactor so I am actually using functions to build all of the components 
 let formBuilder = {
   formfields() {
     let formHTML = `  
@@ -24,28 +25,35 @@ let formBuilder = {
     </fieldset>
 
     <!-- Mood -->
-    <fieldset>
-      <label class = "form__fields--floats" for="journalMood">Mood for the day</label>
-      <select class = "form__fields--floats" name="journalMood" id="journalMood">
-          <option value=2>Sad</option>
-          <option value=1>Happy</option>
-          <option value=3>Ok</option>
-      </select>
-
+    <fieldset id = "putMoodHere">
+     
       <!-- Submit -->
     </fieldset>
       <input id = "submit" class = "form__fields--floats" type = "button" value="Record Journal Entry">
   </form>
   <section id = "section_radios">
-    <h3>Filter Journal By Mood</h3>
-    <input type = "radio" class = "radio_mood" name = "mood" value = "sad">Sad
-    <input type = "radio" class = "radio_mood" name = "mood" value = "happy">Happy
-    <input type = "radio" class = "radio_mood" name = "mood" value = "ok">Ok
-
+  
   </section>`
   return formHTML;
   },
-  formInsertPoint: $("#formInsert")
+  formInsertPoint: $("#formInsert"),
+  
+  moodDropDownBuilder: (moodArray) => {
+    let dropdown = `<select class = "form__fields--floats" name="journalMood" id="journalMood">`;
+    moodArray.forEach(moodobj =>{
+      dropdown+=`<option value=${moodobj.id}>${moodobj.mood}</option>`
+    });
+    dropdown+=`</select>`;
+    return dropdown;
+  },
+  radioBuilder: (moodArray) => {
+    let radio = `<h3>Filter Journal By Mood</h3>`;
+    moodArray.forEach(moodobj =>{
+      radio+=`<input type = "radio" class = "radio_mood" name = "mood" value = ${moodobj.id}>${moodobj.mood}`
+    });
+    radio+=`</select>`;
+    return radio;
+  }
 }
 
 export default formBuilder

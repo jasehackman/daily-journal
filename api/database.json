@@ -13,6 +13,27 @@
       "entry": "All the stuff",
       "moodId": 3,
       "id": 2
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "Type your entry here!",
+      "moodId": 2,
+      "id": 3
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "Type your entry here!",
+      "moodId": 2,
+      "id": 4
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "Type your entry here!",
+      "moodId": 4,
+      "id": 5
     }
   ],
   "moods": [
@@ -27,6 +48,10 @@
     {
       "mood": "Ok",
       "id": 3
+    },
+    {
+      "mood": "weird",
+      "id": 4
     }
   ]
 }

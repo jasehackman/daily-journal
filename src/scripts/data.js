@@ -21,8 +21,8 @@ let API = {
   },
   body: JSON.stringify(journalEntryObject)
   })},
-  getJournalEntriesByMood (mood) {
-    return fetch(`http://localhost:8088/journalEntries?mood=${mood}`)
+  getJournalEntriesByMood (moodId) {
+    return fetch(`http://localhost:8088/journalEntries?moodId=${moodId}&?_expand=mood`)
           .then(response => response.json())
   },
   postAndGet (journalEntryObject) {
@@ -30,7 +30,6 @@ let API = {
   }
   
 }
-API.getJournalEntriesWMoods().then(theThing => console.log(theThing));
 export default API
 
 // _expand=computer&_expand=department
