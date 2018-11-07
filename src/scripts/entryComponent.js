@@ -2,7 +2,6 @@
 
  let component = {
   build (element) {
-    console.log(element);
   return `<div class = "inserted">
     <h1>${element.date}</h1>
     <h3>${element.concept}</h3>

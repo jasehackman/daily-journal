@@ -34,6 +34,20 @@
       "entry": "Type your entry here!",
       "moodId": 4,
       "id": 5
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "Type your entry here!",
+      "moodId": 1,
+      "id": 6
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "Type your entry here!",
+      "moodId": 3,
+      "id": 7
     }
   ],
   "moods": [
