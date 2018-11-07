@@ -21,8 +21,8 @@ let API = {
   },
   body: JSON.stringify(journalEntryObject)
   })},
-  getJournalEntriesByMood (moodId) {
-    return fetch(`http://localhost:8088/journalEntries?moodId=${moodId}&?_expand=mood`)
+  getJournalEntriesByMood (moodid) {
+    return fetch(`http://localhost:8088/journalEntries?_expand=mood&moodId=${moodid}`)
           .then(response => response.json())
   },
   postAndGet (journalEntryObject) {

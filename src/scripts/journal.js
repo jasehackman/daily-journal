@@ -20,7 +20,6 @@ API.getJournalMoods().then(moodObjArray => {
     radioClick.addEventListener('click', () => {
       let clickValue = radioClick.value;
       API.getJournalEntriesByMood(clickValue).then((entriesByMood) => {
-        console.log(entriesByMood);
         theSpot.text(null);
         theSpot.append(journalComponent.addBuildComponet(entriesByMood))
       })
